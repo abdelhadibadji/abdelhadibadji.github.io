@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    font-family: Roboto , sans-serif;
+}
+// font weights -----------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+
+    $Black: 900;
+    $Bold: 700;
+    $Medium: 500;
+    $Regular: 400;
+    $Light:300;
+    $thin:100;
+//font sizes --------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+    $sectiontitle: 8.75rem;
+    $sectiontitleb: 6.25rem;
+    $sectiontitlec: 4rem;
+    $displayfontsize: 4rem;
+
+    $large_1: 3rem;
+    $small_1: 2.125rem;
+
+    $large_2: 2.125rem;
+    $small_2: 1.5rem;
+
+    $large_3: 1.5rem;
+    $small_3: 1.25rem;
+
+    $large_4: 1.25rem;
+    $small_4: 1rem;
+
+    $large_5: 1rem;
+    $small_5: 0.875rem;
+
+    $large_6: 0.875rem;
+    $small_6: 0.75rem;
+
+    $bodylarge: 1rem;
+    $bodysmall: 0.875rem;
+    
+    $caption: 0.688rem;
+    $footer:  0.625rem;
+    
+//Box shadows -------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+
+    $Shadow_XL: 0px 20px 56px rgba(0, 0, 0, 0.29);
+    $Shadow_LG: 0px 13px 37px rgba(0, 0, 0, 0.21);
+    $Shadow_MD: 0px 9px 18px rgba(0, 0, 0, 0.15);
+    $Shadow_SM: 0px 6px 12px rgba(0, 0, 0, 0.11);
+    $Shadow_XS: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    $Shadow_none:none;
+
+//Colors ------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------
+
+//Brand colors :
+
+    $brd-1: #F45C43;
+    $brd-2: #EB3349;
+    $brd-3: #1B0637;
+
+//Primary colors :
+
+    $primary-50: #EDE2FC;
+    $primary-300: #9552EC;
+    $primary-500: #6316C7;
+    $primary-700: #380D71;
+    $primary-900: #1B0637;
+
+//Secondary colors :
+
+    $secondary-50: #F38A97;
+    $secondary-300: #EE5062;
+    $secondary-500: #EB3349;
+    $secondary-700: #CC142A;
+    $secondary-900: #AF1124;
+
+//Neutral colors :
+
+    $neutral-50: #F9F9F9;
+    $neutral-300: #E1E1E1;
+    $neutral-500: #B5B5B5;
+    $neutral-700: #505050;
+    $neutral-900: #252525;
+
+//Success colors :
+
+    $success-50: #EDE2FC;
+    $success-300: #07E2A4;
+    $success-500: #05AC7D;
+    $success-700: #047857;
+    $success-900: #035D44;
+
+//Warning colors :
+
+    $warning-50: #EDE2FC;
+    $warning-300: #FC9851;
+    $warning-500: #DF670C;
+    $warning-700: #B45309;
+    $warning-900: #8D4107;
+
+//Error colors :
+
+    $error-50: #F7C8C8;
+    $error-300: #E96C6C;
+    $error-500: #DE2222;
+    $error-700: #B91C1C;
+    $error-900: #921616;
+
+//shades colors :
+
+    $dark-shade: #000000;
+    $light-shade: #FFFFFF;
+
+
+
+
+
+
+    // background-image: url(Vector.png);
+    // background-size: auto;
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // filter: alpha(Opacity=0.25);
+
+
+
+
+// .about-us:before {
+//    content: ' ';
+//    display: block;
+//    position: absolute;
+//    max-width: 1260px;
+//    width: 100%;
+//    height: 100%;
+//    max-height: 100%;
+//    background-image: url(Vector.png);
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//    background-position: 50% 0;
+//   }
