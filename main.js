@@ -33,7 +33,32 @@ showMenu('nav-toggle','navbar')
 const navLink = document.querySelectorAll('.list-item')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('navbar')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
+
+
+
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 100,
+    centeredSlides: true,
+    grapcursor: true,
+    loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  });
+
+
