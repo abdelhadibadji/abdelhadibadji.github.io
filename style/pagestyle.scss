@@ -223,7 +223,7 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
             }
-            input:nth-child(2) {
+            .learnbtn {
                 background: none;
                 border: 1px solid $secondary-700;
                 color: $secondary-700;
@@ -234,12 +234,15 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
                 height: 51px;
+                text-align: center;
+                text-decoration: none;
+                line-height: 50px;
             }
-            input:nth-child(2):hover {
+            .learnbtn:hover {
                 border-color: $secondary-900;
                 color: $secondary-900;
             }
-            input:nth-child(2):active {
+            .learnbtn:active {
                 border-color: $secondary-700;
                 color: $secondary-700;
             }
@@ -825,94 +828,23 @@ html {
     padding: 28px;
     margin-bottom: -125px;
     position: relative;
-
     .tuned-text {
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: auto;
         height: 100%;
         max-width: 543px;
-
         h1 {
             font-size: $large_2;
             font-weight: $Bold;
         }
-
         p {
             font-size: $bodylarge;
             font-weight: $Regular;
         }
-
-        .PopUp{
-            height: 380px;
-            width: 580px;
-            text-align: center;
-            padding: 30px;
-            position: absolute;
-            top: -40%;
-            left: 0%;
-            z-index: 1;
-            transition: 0.5s;
-
-            border-radius: 10px;
-            background-color: $neutral-50;
-            box-shadow: inset $Shadow_SM;
-            color: $primary-700;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            
-            transform: scale(0);
-
-            .congarts{
-                h1{
-                    font-weight: $Black;
-                    font-size: $large_1;
-                }
-            }
-
-            .msg{
-                p{
-                  font-size: $large_4; 
-                  font-weight: $Medium; 
-
-                  span{
-                      color: $primary-500;
-                    }
-                }
-            }
-
-            .dismiss{
-                display: flex;
-                align-self: flex-end;
-
-                button{
-                    border: none;
-                    width: 160px;
-                    background-color: $secondary-700;
-                    padding: 10px;
-                    border-radius: 5px;
-                    color: $light-shade;
-                    font-size: $large_5;
-                    font-weight: $Medium;
-                    letter-spacing: 0.5px;
-                    cursor: pointer;
-                }
-                
-            }
-        }
-
-        #PopUp.active{
-            transform: scale(1);
-            transition: 0.5s;
-        }
-
         .tunned-email-fill {
             display: flex;
-            
             input {
                 min-width: 513px;
                 height: 56px;
@@ -924,7 +856,6 @@ html {
                 font-size: $bodysmall;
                 letter-spacing: 0.5px;
             }
-
             button{
                 margin: auto;
                 min-width: 158px;
@@ -944,8 +875,6 @@ html {
         }
     }
 }
-
-
 
 /*======================== FOOTER ==========================*/
 /*==========================================================*/
@@ -1128,10 +1057,6 @@ html {
         padding-right: 30px;
     }
     .footer {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .faq {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -1697,6 +1622,12 @@ html {
         }
     }
 }
+
+
+
+
+
+
 
 
 
