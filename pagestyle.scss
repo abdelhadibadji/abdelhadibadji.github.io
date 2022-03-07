@@ -28,17 +28,8 @@ html {
     background-color: $secondary-900;
 }
 #btns:active {
-    background-color: $secondary-700;
+    background-color: $secondary-1000;
 }
-
-
-
-
-
-
-
-
-
 
 .background-title {
     text-align: center;
@@ -143,6 +134,10 @@ html {
             .startbtn {
                 width: 128px;
                 margin-left: 25px;
+                text-decoration: none;
+                text-align: center;
+                line-height: 51px;
+
             }
             .startbtn:hover{
                 background-color: $secondary-900;
@@ -156,6 +151,9 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
                 border-radius: 8px;
+                text-decoration: none;
+                width: 45px;
+                align-self: center;
             }
             .logbtn:hover{
                 color: $secondary-900;
@@ -225,7 +223,7 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
             }
-            input:nth-child(2) {
+            .learnbtn {
                 background: none;
                 border: 1px solid $secondary-700;
                 color: $secondary-700;
@@ -236,12 +234,15 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
                 height: 51px;
+                text-align: center;
+                text-decoration: none;
+                line-height: 50px;
             }
-            input:nth-child(2):hover {
+            .learnbtn:hover {
                 border-color: $secondary-900;
                 color: $secondary-900;
             }
-            input:nth-child(2):active {
+            .learnbtn:active {
                 border-color: $secondary-700;
                 color: $secondary-700;
             }
@@ -380,6 +381,7 @@ html {
 /*==========================================================*/
 /*==========================================================*/
 .services {
+    position: relative;
     background-color: $primary-900;
     color: $light-shade;
     display: flex;
@@ -400,11 +402,12 @@ html {
         }
     }
     .cards-container {
+        z-index: 1;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         max-width: 1260px;
-        margin: 0px auto 90px;
+        margin: 0px auto 200px;
         width: 100%;
         .card {
             background: linear-gradient(189.66deg, rgba(255, 255, 255, 0.2) -2.96%, rgba(0, 0, 0, 0) 92.72%), #2B1646;
@@ -438,6 +441,37 @@ html {
     }
 }
 
+// .services::after {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     width: 70%;
+//     height: 100%;
+//     background-image: url(../illustrations/bglogo.svg);
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-position: bottom;
+//     bottom: -100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+    
+// }
+// .services::before {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     opacity: 0.1;
+//     width: 70%;
+//     height: 100%;
+//     background-image: url(../illustrations/redellipse.svg);
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-position: bottom;
+//     bottom: -100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+    
+// }
 /*======================== PRICING =========================*/
 /*==========================================================*/
 /*==========================================================*/
