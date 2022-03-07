@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" type="image/c-icon" href="illustrations/liefericon.svg">
     <link rel="stylesheet" href="style/pagestyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="JavaScript/main.js"></script>
+
     <title>LIEFER</title>
 </head>
 <body>
@@ -47,13 +52,13 @@
                             <img src="illustrations/buger.svg" alt="">
                         </div>
                         <div class="login">
-                            <input type="button" class="logbtn" value="Log In">
-                            <input type="button" class="startbtn" id="btns" value="Get Started">
+                            <a href="login.html" class="logbtn">Log In</a>
+                            <a href="signup.html"  class="startbtn" id="btns">Get Started</a>
                         </div>
                     </div>
                 </section>
             </header>
-    <div class="big-container">
+    <div class="big-container" id="container">
         <!--------------------------------- HERO --------------------------------->
 <!------------------------------------------------------------------------>
 <!------------------------------------------------------------------------>
@@ -195,39 +200,35 @@
                         <div class="fills-distance">
                             <div>
                                 <h4>Distance (Km)</h4>
-                                <input type="number" placeholder="01" min="0">
+                                <input type="number" placeholder="01" min="0" id="distance" required>
                             </div>
                             <div>
                                 <h4>Weight (Kg)</h4>
-                                <input type="number" placeholder="0.5" min="0">
+                                <input type="number" placeholder="0.5" min="0" id="weight" required>
                             </div>
                         </div>
                         <div class="fills-size">
                             <div>
                                 <h4>Lenght (Cm)</h4>
-                                <input type="number" placeholder="0.5" min="0">
+                                <input type="number" placeholder="0.5" min="0" id="lenght" required>
                             </div>
                             <div>
                                 <h4>Height (Cm)</h4>
-                                <input type="number" placeholder="0.5" min="0">
+                                <input type="number" placeholder="0.5" min="0" id="height" required>
                             </div>
                             <div>
                                 <h4>Width (Cm)</h4>
-                                <input type="number" placeholder="0.5">
+                                <input type="number" placeholder="0.5" id="width" required>
                             </div>
                         </div>
                     </div>
                     <div class="slider">
-                        <input type="checkbox">
-                        <span>Super Fast Delivery (3%)</span>
-                    </div>
-                    <div class="switch">
-                        <div></div>
+                        <input type="checkbox" id="toggle">
                         <span>Super Fast Delivery (3%)</span>
                     </div>
                     <div class="estimated-price">
                         <h3>Estimated Price :</h3>
-                        <input type="button" value="100.00 DZD">
+                        <input type="button" id="prc" value="100.00 DZD" onclick="price()">
                     </div>
                     <div class="last-at-calculator">
                         <input type="button" id="btns" value="Order Delivery">
@@ -405,9 +406,29 @@
             <div class="tuned-text">
                 <h1>Stay Updated With Our Latest News</h1>
                 <p>Get our latest news, updates, blog, posts and musch more directly to your inbox. Subscribe and join our mailing list today.</p>
+                
+                <!-- --------PopUp ------------
+                -------------------------------->
+                
+                <div class="PopUp" id="PopUp">
+                    <div class="congarts">
+                        <h1>Congratulations</h1>
+                    </div>
+
+                    <div class="msg">
+                        <p>Now LIEFER is going to send updates, news, posts and much more to this email : 
+                            <span id="mail"></span>
+                        </p> 
+                    </div>
+
+                    <div class="dismiss">
+                        <button onclick=PopUp()>Close</button>
+                    </div>
+                </div>
+
                 <div class="tunned-email-fill">
-                    <input type="email" placeholder="Email">
-                    <button id="btns"><img src="illustrations/Inbox.svg" alt=""> Subsribe</button>
+                    <input type="email" placeholder="Email" id="email">
+                    <button id="btns" onclick="PopUp()"><img src="illustrations/Inbox.svg" alt="">Subsribe</button>
                 </div>
             </div>
             <div class="tuned-illustration">
@@ -415,6 +436,8 @@
                 <img src="illustrations/pana.svg" alt="">
             </div>
         </section>
+
+        
         
 <!-------------------------------- FOOTER -------------------------------->
 <!------------------------------------------------------------------------>
@@ -458,8 +481,8 @@
                 <div class="links-ind">
                     <h2>Support</h2>
                     <div class="links">
-                        <a href="#">Contact us</a>
-                        <a href="#">FAQ</a>
+                        <a href="support.html#contact-us">Contact us</a>
+                        <a href="support.html#faq">FAQ</a>
                         <a href="#">Feedback</a>
                     </div>
                 </div>
@@ -483,11 +506,5 @@
         </div>
     </footer>
 </section>
-
-
-
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
 </body>
 </html>

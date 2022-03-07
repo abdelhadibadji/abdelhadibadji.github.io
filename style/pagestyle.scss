@@ -28,17 +28,8 @@ html {
     background-color: $secondary-900;
 }
 #btns:active {
-    background-color: $secondary-700;
+    background-color: $secondary-1000;
 }
-
-
-
-
-
-
-
-
-
 
 .background-title {
     text-align: center;
@@ -143,6 +134,10 @@ html {
             .startbtn {
                 width: 128px;
                 margin-left: 25px;
+                text-decoration: none;
+                text-align: center;
+                line-height: 51px;
+
             }
             .startbtn:hover{
                 background-color: $secondary-900;
@@ -156,6 +151,9 @@ html {
                 cursor: pointer;
                 transition: 0.15s;
                 border-radius: 8px;
+                text-decoration: none;
+                width: 45px;
+                align-self: center;
             }
             .logbtn:hover{
                 color: $secondary-900;
@@ -380,6 +378,7 @@ html {
 /*==========================================================*/
 /*==========================================================*/
 .services {
+    position: relative;
     background-color: $primary-900;
     color: $light-shade;
     display: flex;
@@ -400,11 +399,12 @@ html {
         }
     }
     .cards-container {
+        z-index: 1;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         max-width: 1260px;
-        margin: 0px auto 90px;
+        margin: 0px auto 200px;
         width: 100%;
         .card {
             background: linear-gradient(189.66deg, rgba(255, 255, 255, 0.2) -2.96%, rgba(0, 0, 0, 0) 92.72%), #2B1646;
@@ -438,6 +438,37 @@ html {
     }
 }
 
+// .services::after {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     width: 70%;
+//     height: 100%;
+//     background-image: url(../illustrations/bglogo.svg);
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-position: bottom;
+//     bottom: -100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+    
+// }
+// .services::before {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     opacity: 0.1;
+//     width: 70%;
+//     height: 100%;
+//     background-image: url(../illustrations/redellipse.svg);
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-position: bottom;
+//     bottom: -100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+    
+// }
 /*======================== PRICING =========================*/
 /*==========================================================*/
 /*==========================================================*/
@@ -794,23 +825,94 @@ html {
     padding: 28px;
     margin-bottom: -125px;
     position: relative;
+
     .tuned-text {
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: auto;
         height: 100%;
         max-width: 543px;
+
         h1 {
             font-size: $large_2;
             font-weight: $Bold;
         }
+
         p {
             font-size: $bodylarge;
             font-weight: $Regular;
         }
+
+        .PopUp{
+            height: 380px;
+            width: 580px;
+            text-align: center;
+            padding: 30px;
+            position: absolute;
+            top: -40%;
+            left: 0%;
+            z-index: 1;
+            transition: 0.5s;
+
+            border-radius: 10px;
+            background-color: $neutral-50;
+            box-shadow: inset $Shadow_SM;
+            color: $primary-700;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            transform: scale(0);
+
+            .congarts{
+                h1{
+                    font-weight: $Black;
+                    font-size: $large_1;
+                }
+            }
+
+            .msg{
+                p{
+                  font-size: $large_4; 
+                  font-weight: $Medium; 
+
+                  span{
+                      color: $primary-500;
+                    }
+                }
+            }
+
+            .dismiss{
+                display: flex;
+                align-self: flex-end;
+
+                button{
+                    border: none;
+                    width: 160px;
+                    background-color: $secondary-700;
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: $light-shade;
+                    font-size: $large_5;
+                    font-weight: $Medium;
+                    letter-spacing: 0.5px;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+
+        #PopUp.active{
+            transform: scale(1);
+            transition: 0.5s;
+        }
+
         .tunned-email-fill {
             display: flex;
+            
             input {
                 min-width: 513px;
                 height: 56px;
@@ -822,6 +924,7 @@ html {
                 font-size: $bodysmall;
                 letter-spacing: 0.5px;
             }
+
             button{
                 margin: auto;
                 min-width: 158px;
@@ -841,6 +944,8 @@ html {
         }
     }
 }
+
+
 
 /*======================== FOOTER ==========================*/
 /*==========================================================*/
@@ -1023,6 +1128,10 @@ html {
         padding-right: 30px;
     }
     .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .faq {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -1588,12 +1697,6 @@ html {
         }
     }
 }
-
-
-
-
-
-
 
 
 

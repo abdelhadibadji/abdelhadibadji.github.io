@@ -1,0 +1,198 @@
+@import "typcolors.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1260px;
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    padding-top: 0 !important;
+    margin-bottom: 70px !important;
+    img {
+        border-right: 2px solid $primary-900;
+        margin-right: 20px;
+        padding-right: 8px;
+
+    }
+    a {
+        height: 48px;
+    }
+    p {
+        font-size: $large_5;
+        color: $primary-900;
+        font-weight: $Bold;
+    }
+}
+.login-container {
+    width: 100%;
+    max-width: 850px;
+    box-shadow: $Shadow_LG;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding-block: 90px;
+    form {
+        margin: auto;
+        width: 50%;
+        h1 {
+            font-size: 2.25rem;
+            color: $primary-700;
+            line-height: 100%;
+
+        }
+        h2 {
+            font-size: $large_3;
+            color: $secondary-900;
+            margin-bottom: 25px;
+        }
+        label {
+            font-size: 1.125rem;
+            width: 100%;
+            color: $primary-900;
+            font-weight: $Medium;
+
+
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            border: none;
+            outline-color: $primary-900;
+            border: 2px solid $neutral-300;
+            padding-left: 20px;
+            font-size: 14px;
+            color: $primary-900;
+            margin-bottom: 20px;
+            margin-top: 4px;
+        }
+        input::placeholder {
+            color: $neutral-500;
+        }
+        button {
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: $secondary-700;
+            color: $primary-50;
+            font-size: $large_5;
+            font-weight: $Bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            transition: 0.15s;
+        }
+        button:hover {
+            background-color: $secondary-900;
+
+        }
+        p {
+            font-size: $large_6;
+            font-weight: $Medium;
+            color: $primary-900;
+    
+            a {
+                text-decoration: none;
+                color: $primary-500;
+                margin-inline: 4px;
+                transition: 0.15s;
+            }
+            a:hover {
+                color: $primary-300;
+    
+            }
+        }
+        .checkbox {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+            .check {
+                accent-color: $brd-2;
+                margin: 0;
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                min-height: 20px;
+
+                margin-right: 10px;
+            }
+            p {
+                font-size: $large_6;
+                font-weight: $Medium;
+                color: $primary-900;
+        
+                a {
+                    text-decoration: none;
+                    color: $primary-500;
+                    margin-inline: 4px;
+                    transition: 0.15s;
+                }
+                a:hover {
+                    color: $primary-300;
+        
+                }
+            }
+        }
+            
+    }
+}
+@media screen and (max-width: 750px) {
+    form {
+        width: 70% !important;
+    }
+} 
+@media screen and (max-width: 550px) {
+    body {
+        margin-inline: 8px;
+    }
+    .login-container {
+        form {
+            width: 95% !important;
+            h1 {
+                font-size: $large_2 ;
+            }
+            h2 {
+                font-size: $large_4 ;
+            }
+
+            
+        }
+    }
+} 
+@media screen and (max-width: 355px) {
+    .login-container {
+        form {
+            text-align: center;
+            h1 {
+                font-size: $large_3 ;
+            }
+            h2 {
+                font-size: $large_5;
+            }
+            input {
+                padding-left: 0;
+                text-align: center;
+                height: 44px;
+            }
+            input::placeholder {
+                text-align: center;
+            }
+            button {
+                height: 44px;
+
+            }
+        }
+    }
+
+}

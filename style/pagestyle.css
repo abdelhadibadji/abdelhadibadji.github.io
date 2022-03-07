@@ -36,7 +36,7 @@ html {
 }
 
 #btns:active {
-  background-color: #CC142A;
+  background-color: #9b1121;
 }
 
 .background-title {
@@ -185,6 +185,9 @@ html {
 .header .nav_log .login .startbtn {
   width: 128px;
   margin-left: 25px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 51px;
 }
 
 .header .nav_log .login .startbtn:hover {
@@ -201,6 +204,11 @@ html {
   -webkit-transition: 0.15s;
   transition: 0.15s;
   border-radius: 8px;
+  text-decoration: none;
+  width: 45px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header .nav_log .login .logbtn:hover {
@@ -502,6 +510,7 @@ html {
 /*==========================================================*/
 /*==========================================================*/
 .services {
+  position: relative;
   background-color: #1B0637;
   color: #FFFFFF;
   display: -webkit-box;
@@ -531,6 +540,7 @@ html {
 }
 
 .services .cards-container {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +550,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1260px;
-  margin: 0px auto 90px;
+  margin: 0px auto 200px;
   width: 100%;
 }
 
@@ -1113,6 +1123,78 @@ html {
   font-weight: 400;
 }
 
+.tuned .tuned-text .PopUp {
+  height: 380px;
+  width: 580px;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  top: -40%;
+  left: 0%;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: #F9F9F9;
+  -webkit-box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.11);
+          box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.11);
+  color: #380D71;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.tuned .tuned-text .PopUp .congarts h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.tuned .tuned-text .PopUp .msg p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.tuned .tuned-text .PopUp .msg p span {
+  color: #6316C7;
+}
+
+.tuned .tuned-text .PopUp .dismiss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.tuned .tuned-text .PopUp .dismiss button {
+  border: none;
+  width: 160px;
+  background-color: #CC142A;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.tuned .tuned-text #PopUp.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .tuned .tuned-text .tunned-email-fill {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,6 +1452,10 @@ html {
     padding-right: 30px;
   }
   .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .faq {
     padding-left: 30px;
     padding-right: 30px;
   }
