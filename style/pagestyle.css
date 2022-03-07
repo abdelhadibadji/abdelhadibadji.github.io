@@ -307,7 +307,7 @@ html {
   transition: 0.15s;
 }
 
-.hero .hero-content .hero-buttons input:nth-child(2) {
+.hero .hero-content .hero-buttons .learnbtn {
   background: none;
   border: 1px solid #CC142A;
   color: #CC142A;
@@ -319,14 +319,17 @@ html {
   -webkit-transition: 0.15s;
   transition: 0.15s;
   height: 51px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
 }
 
-.hero .hero-content .hero-buttons input:nth-child(2):hover {
+.hero .hero-content .hero-buttons .learnbtn:hover {
   border-color: #AF1124;
   color: #AF1124;
 }
 
-.hero .hero-content .hero-buttons input:nth-child(2):active {
+.hero .hero-content .hero-buttons .learnbtn:active {
   border-color: #CC142A;
   color: #CC142A;
 }
@@ -1123,78 +1126,6 @@ html {
   font-weight: 400;
 }
 
-.tuned .tuned-text .PopUp {
-  height: 380px;
-  width: 580px;
-  text-align: center;
-  padding: 30px;
-  position: absolute;
-  top: -40%;
-  left: 0%;
-  z-index: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 10px;
-  background-color: #F9F9F9;
-  -webkit-box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.11);
-          box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.11);
-  color: #380D71;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.tuned .tuned-text .PopUp .congarts h1 {
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-.tuned .tuned-text .PopUp .msg p {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-.tuned .tuned-text .PopUp .msg p span {
-  color: #6316C7;
-}
-
-.tuned .tuned-text .PopUp .dismiss {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.tuned .tuned-text .PopUp .dismiss button {
-  border: none;
-  width: 160px;
-  background-color: #CC142A;
-  padding: 10px;
-  border-radius: 5px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-
-.tuned .tuned-text #PopUp.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 .tuned .tuned-text .tunned-email-fill {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1452,10 +1383,6 @@ html {
     padding-right: 30px;
   }
   .footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .faq {
     padding-left: 30px;
     padding-right: 30px;
   }
