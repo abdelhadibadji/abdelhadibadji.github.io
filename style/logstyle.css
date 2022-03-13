@@ -10,11 +10,14 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #F9F9F9;
+}
+
 header {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1260px;
   width: 100%;
   display: -webkit-box;
@@ -24,13 +27,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 0 !important;
-  margin-bottom: 70px !important;
-}
-
-header img {
-  border-right: 2px solid #1B0637;
-  margin-right: 20px;
-  padding-right: 8px;
+  margin-bottom: 25px !important;
 }
 
 header a {
@@ -44,11 +41,12 @@ header p {
 }
 
 .login-container {
+  margin-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 75px;
+  background-color: #FFFFFF;
   width: 100%;
-  max-width: 850px;
-  -webkit-box-shadow: 0px 13px 37px rgba(0, 0, 0, 0.21);
-          box-shadow: 0px 13px 37px rgba(0, 0, 0, 0.21);
-  border-radius: 15px;
+  max-width: 500px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -56,24 +54,20 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-block: 90px;
+  -webkit-box-shadow: 0 0 7px 0 #00000014, 0 2px 7px 0 #0000001f;
+          box-shadow: 0 0 7px 0 #00000014, 0 2px 7px 0 #0000001f;
 }
 
 .login-container form {
   margin: auto;
-  width: 50%;
-}
-
-.login-container form h1 {
-  font-size: 2.25rem;
-  color: #380D71;
-  line-height: 100%;
+  width: 70%;
 }
 
 .login-container form h2 {
+  text-align: center;
   font-size: 1.5rem;
   color: #AF1124;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .login-container form label {
@@ -132,13 +126,17 @@ header p {
   background-color: #AF1124;
 }
 
-.login-container form p {
+.login-container form .signlog {
+  border-top: 2px solid #E1E1E1;
+  padding-top: 15px;
+  margin-top: 15px;
+  text-align: center;
   font-size: 0.875rem;
   font-weight: 500;
   color: #1B0637;
 }
 
-.login-container form p a {
+.login-container form .signlog a {
   text-decoration: none;
   color: #6316C7;
   margin-inline: 4px;
@@ -146,7 +144,7 @@ header p {
   transition: 0.15s;
 }
 
-.login-container form p a:hover {
+.login-container form .signlog a:hover {
   color: #9552EC;
 }
 
@@ -170,13 +168,13 @@ header p {
   margin-right: 10px;
 }
 
-.login-container form .checkbox p {
+.login-container form .checkbox label {
   font-size: 0.875rem;
   font-weight: 500;
   color: #1B0637;
 }
 
-.login-container form .checkbox p a {
+.login-container form .checkbox label a {
   text-decoration: none;
   color: #6316C7;
   margin-inline: 4px;
@@ -184,13 +182,20 @@ header p {
   transition: 0.15s;
 }
 
-.login-container form .checkbox p a:hover {
+.login-container form .checkbox label a:hover {
   color: #9552EC;
 }
 
 @media screen and (max-width: 750px) {
+  body {
+    background-color: unset;
+  }
+  .login-container {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
   form {
-    width: 70% !important;
+    width: 70%;
   }
 }
 

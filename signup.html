@@ -8,13 +8,11 @@
     <title>sign up in liefer</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="illustrations/Logo.svg" alt=""></a>
-        <p>Log in</p>
-    </header>
     <div class="login-container">
         <form action="">
-            <h1>Welcome to LIEFER!</h1>
+            <header class="header">
+                <a href="index.html"><img src="illustrations/Logo.svg" alt=""></a>
+            </header>
             <h2>Register your account</h2>
             <label for="username">Username</label>
             <input type="text" placeholder="badji abdelhadi">
@@ -23,11 +21,11 @@
             <label for="password">Password</label>
             <input type="password" placeholder="+8 caracters">
             <div class="checkbox">
-                <input type="checkbox" class="check"> 
-                <p>I agree to the HoneyBee <a href=""> User Agreement </a> and <a href=""> Privacy Policy.</a></p>
+                <input type="checkbox" class="check" id="check"> 
+                <label for="check">I agree to the HoneyBee <a href=""> User Agreement </a> and <a href=""> Privacy Policy.</a></label>
             </div>
             <button>Log in</button>
-            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <p class="signlog">Already have an account? <a href="login.html">Log in</a></p>
         </form>
     </div>
 </body>

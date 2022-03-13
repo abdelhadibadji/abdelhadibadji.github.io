@@ -178,66 +178,62 @@
 <!------------------------------------------------------------------------>
 <!------------------------------------------------------------------------>
 
-        <section class="pricing" id="pricing">
-            <div class="background-title">
-                <h1>Pricing</h1>
-                <h2>Calculate The Price</h2>
-                <p>Find out how much the service will cost you, then order one</p>
+<section class="pricing" id="pricing">
+    <div class="background-title">
+        <h1>Pricing</h1>
+        <h2>Calculate The Price</h2>
+        <p>Find out how much the service will cost you, then order one</p>
+    </div>
+    <div class="pricing-content">
+        <div class="pricing-illustration">
+            <img src="illustrations/Frame 21.svg" alt="">
+        </div>
+        <div class="pricing-calculator">
+            <div class="calculator-header">
+                <h3>Get Your Quote Instantly</h3>
+                <p>Please enter your parcel informations:</p>
             </div>
-            <div class="pricing-content">
-                <div class="pricing-illustration">
-                    <img src="illustrations/Frame 21.svg" alt="">
+            <div class="calculator-fills">
+                <div class="fills-distance">
+                    <div>
+                        <h4>Distance (Km)</h4>
+                        <input type="number" placeholder="01" min="0" id="distance" required>
+                    </div>
+                    <div>
+                        <h4>Weight (Kg)</h4>
+                        <input type="number" placeholder="0.5" min="0" id="weight" required>
+                    </div>
                 </div>
-                <div class="pricing-calculator">
-                    <div class="calculator-header">
-                        <h3>Get Your Quote Instantly</h3>
-                        <p>Please enter your parcel informations:</p>
+                <div class="fills-size">
+                    <div>
+                        <h4>Lenght (Cm)</h4>
+                        <input type="number" placeholder="0.5" min="0" id="lenght" required>
                     </div>
-                    <div class="calculator-fills">
-                        <div class="fills-distance">
-                            <div>
-                                <h4>Distance (Km)</h4>
-                                <input type="number" placeholder="01" min="0">
-                            </div>
-                            <div>
-                                <h4>Weight (Kg)</h4>
-                                <input type="number" placeholder="0.5" min="0">
-                            </div>
-                        </div>
-                        <div class="fills-size">
-                            <div>
-                                <h4>Lenght (Cm)</h4>
-                                <input type="number" placeholder="0.5" min="0">
-                            </div>
-                            <div>
-                                <h4>Height (Cm)</h4>
-                                <input type="number" placeholder="0.5" min="0">
-                            </div>
-                            <div>
-                                <h4>Width (Cm)</h4>
-                                <input type="number" placeholder="0.5">
-                            </div>
-                        </div>
+                    <div>
+                        <h4>Height (Cm)</h4>
+                        <input type="number" placeholder="0.5" min="0" id="height" required>
                     </div>
-                    <div class="slider">
-                        <input type="checkbox">
-                        <span>Super Fast Delivery (3%)</span>
-                    </div>
-                    <div class="switch">
-                        <div></div>
-                        <span>Super Fast Delivery (3%)</span>
-                    </div>
-                    <div class="estimated-price">
-                        <h3>Estimated Price :</h3>
-                        <input type="button" value="100.00 DZD">
-                    </div>
-                    <div class="last-at-calculator">
-                        <input type="button" id="btns" value="Order Delivery">
-                        <a href="#">Need a buisness plan ?</a>
+                    <div>
+                        <h4>Width (Cm)</h4>
+                        <input type="number" placeholder="0.5" id="width" required>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="slider">
+                <input type="checkbox" id="toggle">
+                <span>Super Fast Delivery (3%)</span>
+            </div>
+            <div class="estimated-price">
+                <h3>Estimated Price :</h3>
+                <input type="button" id="prc" value="100.00 DZD" onclick="price()">
+            </div>
+            <div class="last-at-calculator">
+                <input type="button" id="btns" value="Order Delivery">
+                <a href="#">Need a buisness plan ?</a>
+            </div>
+        </div>
+    </div>
+</section>
 
         
 <!------------------------------- ABOUT US ------------------------------->
@@ -493,6 +489,6 @@
 </a> -->
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="JavaScript/main.js"></script>
 </body>
 </html>
