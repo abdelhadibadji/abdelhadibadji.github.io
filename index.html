@@ -25,22 +25,22 @@
                         <div class="navbar" id="navbar">
                             <ul class="list">
                                 <li class="list-item">
-                                    <a href="#hero">Home</a>
+                                    <a href="#hero" class="nav__link">Home</a>
                                 </li>
                                 <li class="list-item">
-                                    <a href="#tracking">Tracking</a>
+                                    <a href="#tracking" class="nav__link">Tracking</a>
                                 </li>
                                 <li class="list-item">
-                                    <a href="#services">Services</a>
+                                    <a href="#services" class="nav__link">Services</a>
                                 </li>
                                 <li class="list-item">
-                                    <a href="#pricing">Pricing</a>
+                                    <a href="#pricing" class="nav__link">Pricing</a>
                                 </li>
                                 <li class="list-item">
-                                    <a href="#about-us">About Us</a>
+                                    <a href="#about-us" class="nav__link">About Us</a>
                                 </li>
                                 <li class="list-item">
-                                    <a href="#testimonials">Testimonoals</a>
+                                    <a href="#testimonials" class="nav__link">Testimonoals</a>
                                 </li>
                             </ul>
                             <div class="indicator"></div>
@@ -197,35 +197,35 @@
                 <div class="fills-distance">
                     <div>
                         <h4>Distance (Km)</h4>
-                        <input type="number" placeholder="01" min="0" id="distance" required>
+                        <input type="number" placeholder="01" value="0" min="0" id="distance" required onkeyup="price()">
                     </div>
                     <div>
                         <h4>Weight (Kg)</h4>
-                        <input type="number" placeholder="0.5" min="0" id="weight" required>
+                        <input type="number" placeholder="0.5" value="0" min="0" id="weight" required onkeyup="price()">
                     </div>
                 </div>
                 <div class="fills-size">
                     <div>
                         <h4>Lenght (Cm)</h4>
-                        <input type="number" placeholder="0.5" min="0" id="lenght" required>
+                        <input type="number" placeholder="0.5" value="0"  min="0" id="lenght" required onkeyup="price()">
                     </div>
                     <div>
                         <h4>Height (Cm)</h4>
-                        <input type="number" placeholder="0.5" min="0" id="height" required>
+                        <input type="number" placeholder="0.5" value="0"  min="0" id="height" required onkeyup="price()">
                     </div>
                     <div>
                         <h4>Width (Cm)</h4>
-                        <input type="number" placeholder="0.5" id="width" required>
+                        <input type="number" placeholder="0.5" value="0"  id="width" required onkeyup="price()">
                     </div>
                 </div>
             </div>
             <div class="slider">
-                <input type="checkbox" id="toggle">
-                <span>Super Fast Delivery (3%)</span>
+                <input type="checkbox" id="toggle" onclick="price()">
+                <span>Super Fast Delivery (30%)</span>
             </div>
             <div class="estimated-price">
                 <h3>Estimated Price :</h3>
-                <input type="button" id="prc" value="100.00 DZD" onclick="price()">
+                <input type="button" id="prc" value="0.00 DZD" onclick="price()">
             </div>
             <div class="last-at-calculator">
                 <input type="button" id="btns" value="Order Delivery">
@@ -336,7 +336,7 @@
 
                 <div class="swiper-slide card">
                     <div class="person-title">
-                        <div class="person-img"><img src="illustrations/ellipse 12.jpg" alt=""></div>
+                        <div class="person-img"><img src="illustrations/ellipse 10.jpg" alt=""></div>
                         <div class="person-job">
                             <h3>Anis Kehila</h3>
                             <span>Library Owner</span>
@@ -461,13 +461,7 @@
                         <a href="#">Feedback</a>
                     </div>
                 </div>
-                <div class="links-ind">
-                        <select name="languages" id="languages">
-                            <option value="english">English</option>
-                            <option value="arabic">Arabic</option>
-                            <option value="french">French</option>
-                        </select>
-                </div>
+            
             </div>
         </div>
         <div class="copyright-terms">
