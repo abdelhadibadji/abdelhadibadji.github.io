@@ -1444,24 +1444,11 @@ a {
     .lieferandlinks {
       .links-container {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         .links-ind {
           margin-right: 10px;
         }
-        .links-ind:nth-child(1) {
-          width: 100%;
-          justify-content: space-between;
-          margin-bottom: 20px;
-          h2 {
-            min-width: max-content;
-          }
-          .links {
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 78%;
-          }
-        }
+
       }
     }
   }
